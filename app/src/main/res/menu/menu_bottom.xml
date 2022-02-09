@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/menu_home"
+        android:contentDescription="@string/menu_home"
+        android:icon="@drawable/ic_anasayfa"
+    />
+
+    <item
+        android:id="@+id/MKolayFragment"
+        android:title="@string/menu_mKolay"
+        android:contentDescription="@string/menu_mKolay"
+        android:icon="@drawable/ic_mkolay"
+       />
+
+    <item
+        android:id="@+id/moneyPayFragment"
+        android:title="@string/menu_moneyPay"
+        android:contentDescription="@string/menu_moneyPay"
+        android:icon="@drawable/ic_moneypay"
+       />
+
+    <item
+        android:id="@+id/kazanclarimFragment"
+        android:title="@string/menu_kazanclarıim"
+        android:contentDescription="@string/menu_kazanclarıim"
+        android:icon="@drawable/ic_kazanc"/>
+
+</menu>

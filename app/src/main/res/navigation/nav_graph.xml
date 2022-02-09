@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.migros_ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_MKolayFragment"
+            app:destination="@id/MKolayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MKolayFragment"
+        android:name="com.example.migros_ui.MKolayFragment"
+        android:label="fragment_m_kolay"
+        tools:layout="@layout/fragment_m_kolay" >
+        <action
+            android:id="@+id/action_MKolayFragment_to_moneyPayFragment"
+            app:destination="@id/moneyPayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moneyPayFragment"
+        android:name="com.example.migros_ui.MoneyPayFragment"
+        android:label="fragment_money_pay"
+        tools:layout="@layout/fragment_money_pay" >
+        <action
+            android:id="@+id/action_moneyPayFragment_to_kazanclarimFragment"
+            app:destination="@id/kazanclarimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kazanclarimFragment"
+        android:name="com.example.migros_ui.KazanclarimFragment"
+        android:label="fragment_kazanclarim"
+        tools:layout="@layout/fragment_kazanclarim" />
+</navigation>
