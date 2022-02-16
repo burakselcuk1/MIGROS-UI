@@ -6,12 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.migros_ui.TabLayoutFragments.ViewPagerAdapter
+import com.example.migros_ui.adapter.ViewPagerAdapterForMainPageContent
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class HomeFragment : Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +24,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val adapter= ViewPagerAdapter(this)
         viewPager.adapter = adapter
 
@@ -39,7 +41,6 @@ class HomeFragment : Fragment() {
                 }
             }
         }.attach()
+
     }
-
-
 }
