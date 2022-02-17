@@ -30,6 +30,7 @@ class FirstFragment : Fragment() {
             when(position){
                 0->{
                     tab.text ="Tam Bana Göre"
+
                 }
                 1->{
                     tab.text="Money Kampanyaları"

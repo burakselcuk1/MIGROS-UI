@@ -20,18 +20,18 @@
             android:src="@drawable/logos"/>
         <ImageView
             android:id="@+id/burgerMenu"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_burgermenu"
             android:layout_alignParentRight="true"/>
         <ImageView
             android:id="@+id/userImage"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/burgerMenu"
             android:src="@drawable/ic_user_mg"/>
         <ImageView
-            android:layout_width="50dp"
+            android:layout_width="40dp"
             android:layout_height="match_parent"
             android:layout_marginRight="5dp"
             android:src="@drawable/ic_creditcardduotone"
@@ -43,8 +43,9 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        app:tabTextColor="@color/black"
+        app:tabTextColor="#777777"
         app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/black"
         android:layout_height="50dp"/>
 
     <androidx.viewpager2.widget.ViewPager2
